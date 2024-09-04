@@ -11,9 +11,9 @@ function Header() {
 	const title = pathname === '/' ? 'Dashboard' : pathname.replace('/', '')
 
 	return (
-		<header className="flex items-center justify-between p-8">
-			<h2 className="text-4xl first-letter:uppercase font-medium text-slate-800">{title}</h2>
-			<div className="flex items-center gap-5 text-slate-500">
+		<header className="flex items-center justify-between p-8 w-full border-b border-slate-200">
+			<h2 className="text-4xl first-letter:uppercase font-medium text-gray-800">{title}</h2>
+			<div className="flex items-center gap-5 text-gray-500">
 				{isLight ? (
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ function Header() {
 						d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
 					/>
 				</svg>
-				<div className="flex items-center gap-2.5 text-slate-500 hover:text-pink-400 transition-colors duration-300 cursor-pointer">
+				<div className="flex items-center gap-2.5 text-gray-500 hover:text-pink-400 transition-colors duration-300 cursor-pointer">
 					<Image src={avatar} alt="avatar" className="w-11 h-11 rounded-full" />
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
