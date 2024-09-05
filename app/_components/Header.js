@@ -12,7 +12,7 @@ function Header() {
 
 	return (
 		<header className="flex items-center justify-between p-8 w-full border-b border-slate-200">
-			<h2 className="text-4xl first-letter:uppercase font-medium text-gray-800">{title}</h2>
+			<h2 className="text-4xl first-letter:uppercase font-medium text-gray-700">{title}</h2>
 			<div className="flex items-center gap-5 text-gray-500">
 				{isLight ? (
 					<svg
