@@ -2,9 +2,11 @@ import NavigationLink from './NavigationLink'
 
 function Navigation() {
 	return (
-		<nav className="py-7 px-4 border-r border-slate-200 w-80">
-			<h1 className="text-5xl text-pink-500 font-bold tracking-widest text-center ">Burrito</h1>
-			<ul className="flex flex-col gap-6 pt-12 font-medium text-gray-500 text-xl">
+		<nav className="absolute bg-bg dark:bg-darkbg h-full lg:relative py-7 px-2 lg:px-4 border-r border-slate-200 lg:w-80 dark:border-darkborder overflow-x-hidden w-14 md:hover:w-52 transition-all duration-300 lg:hover:w-80">
+			<h1 className="text-5xl  text-pink-500 font-bold tracking-widest text-center dark:text-darkPrimary hidden lg:block ">
+				Burrito
+			</h1>
+			<ul className="flex flex-col gap-3 md:gap-6 pt-12 font-medium text-gray-500 dark:text-darktext text-xl">
 				<NavigationLink to="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +14,7 @@ function Navigation() {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="size-6">
+						className="size-6 shrink-0">
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
@@ -28,7 +30,7 @@ function Navigation() {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="size-6">
+						className="size-6 shrink-0">
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
@@ -44,7 +46,7 @@ function Navigation() {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="size-6">
+						className="size-6 shrink-0">
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
@@ -60,7 +62,7 @@ function Navigation() {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="size-6">
+						className="size-6 shrink-0">
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
@@ -76,7 +78,7 @@ function Navigation() {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="size-6">
+						className="size-6 shrink-0">
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"

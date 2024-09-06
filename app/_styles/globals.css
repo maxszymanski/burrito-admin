@@ -25,6 +25,7 @@
 		border: 8px solid theme('colors.primary.900');
 		border-right-color: theme('colors.primary.200');
 		animation: rotate 1s infinite linear;
+		color: #163849;
 	}
 
 	.spinner-mini {
