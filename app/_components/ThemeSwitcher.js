@@ -36,9 +36,7 @@ const ThemeSwitcher = () => {
 					</svg>
 				</button>
 			) : (
-				<button
-					className="hover:text-pink-400 transition-colors duration-300 "
-					onClick={() => setTheme('dark')}>
+				<button className="hover:text-primary transition-colors duration-300 " onClick={() => setTheme('dark')}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"

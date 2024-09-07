@@ -1,7 +1,7 @@
 function StatsCart({ children, title, quantity }) {
 	return (
-		<div className="w-[23rem] h-48 bg-white rounded-lg shrink-0 dark:bg-darkbg border border-slate-200 dark:border-darkborder">
-			<div className="flex items-center gap-4 p-7">
+		<div className="min-w-72 max-w-[23rem] h-48 bg-white rounded-lg shrink-0 dark:bg-darkbg border border-slate-200 dark:border-darkborder">
+			<div className="flex items-center gap-4 p-6">
 				<div className=" rounded-full bg-pink-200 dark:bg-darktext p-3">{children}</div>
 				<div className="flex flex-col justify-between text-gray-500 font-medium dark:text-darkPrimary">
 					<p>{title}</p>

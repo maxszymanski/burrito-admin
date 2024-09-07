@@ -1,16 +1,33 @@
+import supabase from '../_services/supabase'
 import StatsCart from './StatsCart'
 
-function OrderStats() {
+export const getStaticProps = async () => {
+	const { data: orders, error } = await supabase.from('orders').select('*')
+	if (error) {
+		console.error(error)
+		return {
+			notFound: true,
+		}
+	}
+	return {
+		props: {
+			orders, // Przekazanie danych do komponentu
+		},
+	}
+}
+
+function OrderStats({ orders }) {
+	console.log(orders)
 	return (
-		<div className="flex items-center justify-between gap-6">
-			<StatsCart title="Orders" quantity="1,580">
+		<div className="flex items-center justify-between gap-5 text-primary dark:text-darkPrimary">
+			<StatsCart title="Orders" quantity={orders}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
 					strokeWidth={1.5}
 					stroke="currentColor"
-					className="size-8 text-pink-500 dark:text-darkPrimary  ">
+					className="size-8 ">
 					<path
 						strokeLinecap="round"
 						strokeLinejoin="round"
@@ -25,7 +42,7 @@ function OrderStats() {
 					viewBox="0 0 24 24"
 					strokeWidth={1.5}
 					stroke="currentColor"
-					className="size-8 text-pink-500 dark:text-darkPrimary">
+					className="size-8 ">
 					<path
 						strokeLinecap="round"
 						strokeLinejoin="round"
@@ -40,7 +57,7 @@ function OrderStats() {
 					viewBox="0 0 24 24"
 					strokeWidth={1.5}
 					stroke="currentColor"
-					className="size-8 text-pink-500 dark:text-darkPrimary ">
+					className="size-8 ">
 					<path
 						strokeLinecap="round"
 						strokeLinejoin="round"
@@ -55,7 +72,7 @@ function OrderStats() {
 					viewBox="0 0 24 24"
 					strokeWidth={1.5}
 					stroke="currentColor"
-					className="size-8 text-pink-500 dark:text-darkPrimary ">
+					className="size-8 ">
 					<path
 						strokeLinecap="round"
 						strokeLinejoin="round"

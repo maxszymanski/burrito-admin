@@ -10,11 +10,11 @@ function Header() {
 	const title = pathname === '/' ? 'Dashboard' : pathname.replace('/', '')
 
 	return (
-		<header className="flex items-center justify-between p-4 md:p-8 w-full border-b bg-white dark:bg-darkbg border-slate-200 dark:border-darkborder">
-			<h2 className="text-xl md:text-4xl first-letter:uppercase font-medium text-gray-500 dark:text-darktext">
+		<header className="flex items-center justify-between p-4 md:p-8 w-full border-b bg-white dark:bg-darkbg border-lightborder dark:border-darkborder">
+			<h2 className="text-xl md:text-4xl first-letter:uppercase font-medium text-lighttext dark:text-darktext">
 				{title}
 			</h2>
-			<div className="flex items-center gap-5 text-gray-500 md:flex-row-reverse md:gap-9">
+			<div className="flex items-center gap-5 text-lighttext md:flex-row-reverse md:gap-9">
 				<ThemeSwitcher />
 				<Notifications />
 				<Avatar />

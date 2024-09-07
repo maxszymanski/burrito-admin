@@ -19,10 +19,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body
-				className={`${roboto.className} relative h-screen bg-bg flex dark:bg-darkbg transition-all duration-300 `}>
+				className={`${roboto.className} relative h-screen bg-bg flex dark:bg-darkbg transition-all duration-75 `}>
 				<Providers>
 					<Navigation />
-					<div className="w-full flex flex-col h-ful overflow-x-hidden ml-12 lg:ml-0">
+					<div className="w-full flex flex-col h-full overflow-x-hidden ml-12 lg:ml-0">
 						<Header />
 						{children}
 					</div>

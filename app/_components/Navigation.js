@@ -2,11 +2,11 @@ import NavigationLink from './NavigationLink'
 
 function Navigation() {
 	return (
-		<nav className="absolute bg-bg dark:bg-darkbg h-full lg:relative py-7 px-2 lg:px-4 border-r border-slate-200 lg:w-80 dark:border-darkborder overflow-x-hidden w-14 md:hover:w-52 transition-all duration-300 lg:hover:w-80">
-			<h1 className="text-5xl  text-pink-500 font-bold tracking-widest text-center dark:text-darkPrimary hidden lg:block ">
+		<nav className="absolute bg-bg dark:bg-darkbg h-full lg:relative py-7 px-2 lg:px-4 border-r border-lightborder lg:w-80 dark:border-darkborder overflow-x-hidden w-14 md:hover:w-52 transition-all duration-300 lg:hover:w-80">
+			<h1 className="text-5xl  text-primary font-bold tracking-widest text-center dark:text-darkPrimary hidden lg:block ">
 				Burrito
 			</h1>
-			<ul className="flex flex-col gap-3 md:gap-6 pt-12 font-medium text-gray-500 dark:text-darktext text-xl">
+			<ul className="flex flex-col gap-3 md:gap-6 pt-12 font-medium text-lighttext dark:text-darktext text-xl">
 				<NavigationLink to="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

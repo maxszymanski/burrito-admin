@@ -15,7 +15,7 @@ function Notifications() {
 	return (
 		<div ref={notificationsRef} className="relative items-center flex">
 			<button
-				className={`hover:text-pink-400 
+				className={`hover:text-primary 
     cursor-pointer transition-colors duration-300 dark:text-darktext dark:hover:text-darkPrimary `}
 				onClick={() => setIsNotificationOpen(is => !is)}>
 				<svg
