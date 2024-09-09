@@ -16,10 +16,9 @@ function Avatar() {
 	useClickOutside(userRef, handleCloseUser)
 
 	return (
-		<div className="flex items-center gap-4 relative">
+		<div ref={userRef} className="flex items-center gap-4 relative">
 			<p className="hidden md:block text-xl dark:text-darktext">Maksymilian</p>
 			<button
-				ref={userRef}
 				onClick={() => setIsUserOpen(is => !is)}
 				className="flex items-center gap-2.5 text-lighttext hover:text-primary transition-colors duration-300 cursor-pointer dark:text-darktext dark:hover:text-darkPrimary ">
 				<Image

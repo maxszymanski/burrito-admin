@@ -17,10 +17,9 @@ export const getStaticProps = async () => {
 }
 
 function OrderStats({ orders }) {
-	console.log(orders)
 	return (
 		<div className="flex items-center justify-between gap-5 text-primary dark:text-darkPrimary">
-			<StatsCart title="Orders" quantity={orders}>
+			<StatsCart title="Orders" quantity="1,850">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
