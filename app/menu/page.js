@@ -2,13 +2,17 @@
 import Image from 'next/image'
 import Container from '../_components/Container'
 import MenuButton from '../_components/MenuButton'
+import DeleteModal from '../_components/DeleteModal'
 
 function Menu() {
 	return (
-		<main className="bg-secondBg w-full py-12 px-6 md:px-12 h-full dark:bg-darkSecondBg">
+		<main className="bg-secondBg w-full py-12 px-6 md:px-12 h-full dark:bg-darkSecondBg ">
 			<Container>
 				<div className="flex gap-5 w-fit border border-lightborder dark:border-darkborder bg-white  rounded-md dark:bg-darkbg py-4 px-6 text-nowrap mb-6 ">
-					<p>Sort by name</p>
+					<select defaultValue={0} className="bg-transparent p-2">
+						<option>Sort by name (A-Z)</option>
+						<option>Sort by name (Z-A)</option>
+					</select>
 					<p>Filter</p>
 				</div>
 				<div className="w-full border border-lightborder dark:border-darkborder bg-white  rounded-md dark:bg-darkbg overflow-auto">
