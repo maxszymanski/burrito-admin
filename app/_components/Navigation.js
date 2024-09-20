@@ -2,7 +2,7 @@ import NavigationLink from './NavigationLink'
 
 function Navigation() {
 	return (
-		<nav className="absolute bg-bg dark:bg-darkbg h-full lg:relative py-7 px-2 lg:px-4 border-r border-lightborder lg:w-80 dark:border-darkborder overflow-x-hidden w-14 md:hover:w-52 transition-all duration-300 lg:hover:w-80">
+		<nav className="absolute bg-bg dark:bg-darkbg h-full lg:relative py-7 px-2 lg:px-4 border-r border-lightborder lg:w-80 dark:border-darkborder overflow-x-hidden w-14 md:hover:w-52 transition-all duration-300 lg:hover:w-80 z-50">
 			<h1 className="text-5xl  text-primary font-bold tracking-widest text-center dark:text-darkPrimary hidden lg:block ">
 				Burrito
 			</h1>

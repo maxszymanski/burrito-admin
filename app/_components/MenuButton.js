@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 import MenuList from './MenuList'
 import useClickOutside from '../_hooks/useClickOutside'
 
-function MenuButton() {
+function MenuButton({ to }) {
 	const [position, setPosition] = useState(null)
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const menuRef = useRef(null)
@@ -29,7 +29,7 @@ function MenuButton() {
 	return (
 		<div className="flex items-center justify-center" ref={menuRef}>
 			<button
-				className="dark:hover:text-darkPrimary hover:text-primary duration-300 transition-colors w-6 p-1.5 dark:hover:bg-darkSecondBg flex items-center justify-center rounded-md border border-transparent dark:hover:border-darkPrimary dark:focus:border-darkPrimary dark:focus:bg-darkSecondBg dark:focus:text-darkPrimary focus:text-primary hover:border-primary focus:border-primary "
+				className="dark:hover:text-darkPrimary hover:text-primary duration-300 transition-colors w-8 p-1.5 dark:hover:bg-darkSecondBg flex items-center justify-center rounded-md border border-transparent dark:hover:border-darkPrimary dark:focus:border-darkPrimary dark:focus:bg-darkSecondBg dark:focus:text-darkPrimary focus:text-primary hover:border-primary focus:border-primary "
 				onClick={handleClick}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ function MenuButton() {
 					/>
 				</svg>
 			</button>
-			<MenuList position={position} isOpen={isMenuOpen} />
+			<MenuList position={position} isOpen={isMenuOpen} to={to} />
 		</div>
 	)
 }

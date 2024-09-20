@@ -22,9 +22,8 @@ export default function RootLayout({ children }) {
 			<body
 				className={`${roboto.className} relative h-screen bg-bg flex dark:bg-darkbg transition-all duration-75 `}>
 				<Providers>
-					<DeleteModal />
 					<Navigation />
-					<div className="w-full flex flex-col h-full overflow-x-hidden ml-12 lg:ml-0">
+					<div className=" w-full flex flex-col h-full overflow-x-hidden ml-12 lg:ml-0 text bg-red-200">
 						<Header />
 						{children}
 					</div>

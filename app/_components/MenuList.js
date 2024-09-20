@@ -1,6 +1,8 @@
 'use client'
 
-function MenuList({ position, isOpen }) {
+import Link from 'next/link'
+
+function MenuList({ position, isOpen, to }) {
 	if (position)
 		return (
 			<div
@@ -11,7 +13,9 @@ function MenuList({ position, isOpen }) {
 				className={`fixed bg-white border overflow-hidden border-lightborder z-10 dark:bg-darkSecondBg dark:border-darkborder rounded-lg   
 				${isOpen ? 'block' : 'hidden'}
 			 `}>
-				<button className="flex  w-full items-center dark:hover:bg-darkbg hover:bg-secondBg transition-colors duration-300 py-3 px-8 text-lighttext dark:text-secondBg hover:text-stone-900 dark:hover:text-white">
+				<Link
+					className="flex  w-full items-center dark:hover:bg-darkbg hover:bg-secondBg transition-colors duration-300 py-3 px-8 text-lighttext dark:text-secondBg hover:text-stone-900 dark:hover:text-white"
+					href={`/menu/${to}`}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -26,7 +30,7 @@ function MenuList({ position, isOpen }) {
 						/>
 					</svg>
 					Edit
-				</button>
+				</Link>
 				<button className="flex  w-full items-center  dark:hover:bg-darkbg hover:bg-secondBg transition-colors duration-300 py-3 px-8 text-lighttext dark:text-secondBg hover:text-stone-900 dark:hover:text-white">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
